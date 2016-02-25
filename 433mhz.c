@@ -1,3 +1,11 @@
+//
+// Zwei Byte werden übertragen, Z.B.: erst  0x00 und dann 0x90
+// 0000 0000  1001 0000
+//    |____|  |   |____|
+//      |   Wert    |
+//  Haus-Adresse  Gerät-Adresse
+// MSBF muss bei der Anwendung nicht beachtet werden !
+
 #include <stdint.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
